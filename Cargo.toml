@@ -1,0 +1,23 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/chain",
+    "crates/core",
+    "crates/file_store",
+    "crates/electrum",
+    "crates/esplora",
+    "crates/bitcoind_rpc",
+    "crates/testenv",
+    "examples/example_cli",
+    "examples/example_electrum",
+    "examples/example_esplora",
+    "examples/example_bitcoind_rpc_polling",
+    "examples/competency_wallet",
+]
+
+[workspace.package]
+authors = ["Bitcoin Dev Kit Developers"]
+
+[workspace.lints.clippy]
+print_stdout = "deny"
+print_stderr = "deny"

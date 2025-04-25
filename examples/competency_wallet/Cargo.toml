@@ -1,0 +1,15 @@
+[package]
+
+name    = "competency_wallet"
+
+version = "0.1.0"
+
+edition = "2021"
+
+
+
+[dependencies]
+
+bdk    = { version = "0.30.2", features = ["keys-bip39", "use-esplora-ureq"] }
+
+anyhow = "1"
